@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>UploadFilesExample</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<!DOCTYPE html>   
+<html>   
+ <head>   
+      <title>File Uploading</title>   
+      <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+      <%= csrf_meta_tags %>   
+   </head>   
+      
+   <body>   
+      <div>   
+         <%= yield %>   
+      </div>   
+   </body>   
+</html>  

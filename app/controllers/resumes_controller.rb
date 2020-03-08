@@ -1,6 +1,6 @@
 class ResumesController < ApplicationController
   def index
-    @resumes = Resumes.all
+    @resumes = Resume.all
   end
 
   def new
@@ -32,7 +32,7 @@ class ResumesController < ApplicationController
   end
 
   private
-  def resumes_params
-    params.require(resume).permit(:name, :attachment)
+  def resume_params
+    params.require(:resume).permit(:name, :attachment)
   end
 end
